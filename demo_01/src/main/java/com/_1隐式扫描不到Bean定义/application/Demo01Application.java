@@ -1,4 +1,4 @@
-package com._1隐式扫描不到Bean定义;
+package com._1隐式扫描不到Bean定义.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

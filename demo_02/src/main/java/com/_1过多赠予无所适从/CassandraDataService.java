@@ -1,4 +1,4 @@
-package com.过多赠予无所适从;
+package com._1过多赠予无所适从;
 
 import org.springframework.stereotype.Repository;
 

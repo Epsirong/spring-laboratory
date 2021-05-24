@@ -1,4 +1,4 @@
-package com.引用内部类的Bean遗忘类名;
+package com._1过多赠予无所适从;
 
 public interface DataService {
     void deleteStudent(int id);

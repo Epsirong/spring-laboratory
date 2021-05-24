@@ -1,4 +1,4 @@
-package com._1隐式扫描不到Bean定义;
+package com._1隐式扫描不到Bean定义.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -19,7 +19,7 @@ public class StudentController {
     //2. 收集方式
     private List<Student> students;
 
-    public StudentController(List students) {
+    public StudentController(List<Student> students) {
         this.students = students;
     }
 

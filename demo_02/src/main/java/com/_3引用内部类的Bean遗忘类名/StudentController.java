@@ -1,8 +1,8 @@
-package com.显式引用Bean首字母大小写问题;
-
+package com._3引用内部类的Bean遗忘类名;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,28 +13,24 @@ import org.springframework.web.bind.annotation.RestController;
 @Validated
 public class StudentController {
 
+    @Repository
+    public static class InnerClassDataService implements DataService{
+        @Override
+        public void deleteStudent(int id) {
+            //空实现
+        }
+    }
 
     @Autowired
-    @Qualifier("CassandraDataService")
-    DataService dataService;
+    // @Qualifier("innerClassDataService")
 
-/*    @Autowired
-    @Qualifier("sQLiteDataService")
-    DataService dataService;*/
-
-    //修改方案：注意大小写
-/*    @Autowired
-    @Qualifier("cassandraDataService")
-    DataService dataService;*/
-
-    //修改方案：注意大小写
-/*    @Autowired
-    @Qualifier("SQLiteDataService")
-    DataService dataService;*/
+    //下面为修正方法
+    @Qualifier("studentController.InnerClassDataService")
+    DataService innerClassDataService;
 
     @RequestMapping(path = "students/{id}", method = RequestMethod.DELETE)
     public void deleteStudent(@PathVariable("id") int id){
-        dataService.deleteStudent(id);
+        innerClassDataService.deleteStudent(id);
     };
 
 }

@@ -1,4 +1,4 @@
-package com.显式引用Bean首字母大小写问题;
+package com._3引用内部类的Bean遗忘类名;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

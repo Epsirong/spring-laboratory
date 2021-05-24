@@ -38,7 +38,7 @@ public class StudentConfig {
 
     // 1. 直接装配方式
     @Bean
-    public List students() {
+    public List<Student> students() {
         Student student3 = createStudent(3, "liu");
         Student student4 = createStudent(4, "fu");
         return Arrays.asList(student3, student4);
