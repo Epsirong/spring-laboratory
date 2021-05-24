@@ -1,4 +1,4 @@
-package com.example3.error;
+package com._3多例Bean被提前固定.error;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;

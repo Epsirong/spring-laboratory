@@ -1,4 +1,4 @@
-package com.example3.fixxed;
+package com._3多例Bean被提前固定.fix;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

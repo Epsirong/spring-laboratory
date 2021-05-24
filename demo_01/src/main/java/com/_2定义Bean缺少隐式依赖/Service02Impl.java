@@ -1,4 +1,4 @@
-package com.example2;
+package com._2定义Bean缺少隐式依赖;
 
 import org.springframework.stereotype.Service;
 

@@ -1,13 +1,14 @@
-package com.example2;
+package com.生命周期.意外触发shutdown.fix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Example2Application {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Example2Application.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
+

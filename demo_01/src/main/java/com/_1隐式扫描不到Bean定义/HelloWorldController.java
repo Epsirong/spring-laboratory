@@ -1,6 +1,5 @@
-package com.example3.fixxed;
+package com._1隐式扫描不到Bean定义;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,11 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldController {
 
-    @Autowired
-    private ServiceImpl serviceImpl;
-
-    @GetMapping("hi01")
+    @GetMapping("hi")
     public String hi() {
-        return "helloworld, service is : " + serviceImpl;
+        return "helloWorld";
     }
 }
